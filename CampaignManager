@@ -1,0 +1,52 @@
+package homework5;
+
+public class CampaignManager implements BaseService {
+	
+
+	
+	
+	@Override
+	public void add(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println("Yeni kampanya eklendi: "+campaign.getCampaignName());
+		
+		System.out.println("Eklenen kampayanın süresi: "+ campaign.getValidityPeriodOfCampaign()+" GÜN");
+		
+	}
+
+	@Override
+	public void delete(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println("Varolan kampanyanın süresi doldu. ");
+		
+		
+	}
+
+	@Override
+	public void update(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+
+	@Override
+	public void registerToGame(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+
+	@Override
+	public void checkOutToGame(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+
+	@Override
+	public void buy(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+	
+	
+
+}
+
