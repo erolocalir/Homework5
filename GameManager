@@ -1,0 +1,59 @@
+package homework5;
+
+public class GameManager implements BaseService{
+	
+
+
+	@Override
+	public void add(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println("Yeni oyun eklendi: "+game.getName());
+		
+		
+	}
+
+	@Override
+	public void delete(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+
+	@Override
+	public void update(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println("Var olan oyun güncellendi: "+game.getName());
+		
+		
+	}
+
+	@Override
+	public void registerToGame(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println("GÜNCELLEMENİN KORUNMASI İÇİN LÜTFEN ÇIKIP TEKRAR GİRİŞ YAPINIZ");
+		
+		
+	}
+
+	@Override
+	public void checkOutToGame(Game game, User user, Campaign campaign, Sale sale) {
+		
+		System.out.println(user.getFirstName()+" "+game.getName()+"DAN "+"çıkış yaptın.");
+		
+		System.out.println(user.getFirstName()+" "+game.getName()+"YA "+"tekrar giriş yaptın.");
+		
+	}
+
+	@Override
+	public void buy(Game game, User user, Campaign campaign, Sale sale) {
+		
+		
+	}
+
+
+	
+	
+	
+	
+	
+
+}
