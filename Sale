@@ -1,0 +1,33 @@
+package homework5;
+
+public class Sale implements Entity {
+	
+	
+	
+	int amount;
+	
+	public Sale() {
+		
+		
+	}
+
+	public Sale(int amount) {
+		
+		super();
+		
+		this.amount = amount;
+	}
+	
+
+	public int getAmount() {
+		
+		return amount;
+	}
+	
+
+	public void setAmount(int amount) {
+		
+		this.amount = amount;
+	}
+
+}
