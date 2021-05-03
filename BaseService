@@ -1,0 +1,20 @@
+package homework5;
+
+public interface BaseService {
+	
+	
+	void add(Game game,User user,Campaign campaign,Sale sale);
+	
+	void delete(Game game,User user,Campaign campaign,Sale sale);
+	
+	void update(Game game,User user,Campaign campaign,Sale sale);
+	
+	void registerToGame(Game game,User user,Campaign campaign,Sale sale);
+	
+	void checkOutToGame(Game game,User user,Campaign campaign,Sale sale);
+	
+	void buy(Game game,User user,Campaign campaign,Sale sale);
+	
+	
+
+}
