@@ -1,0 +1,16 @@
+package homework5;
+
+public class Result {
+
+	public Result(boolean b, String string) {
+		
+		
+	}
+
+	public Result(boolean b) {
+		
+	}
+	
+	
+
+}
