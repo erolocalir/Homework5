@@ -1,0 +1,61 @@
+package homework5;
+
+      public  class Game implements Entity{
+	 
+    	  int id;
+    	  String name;
+    	  String kindOfGame;
+    	  
+    	  public Game () {
+    		  
+    		  
+    		  
+    		  
+    	  }
+
+		public  Game(int id, String name, String kindOfGame) {
+			
+			super();
+			
+			this.id = id;
+			
+			this.name = name;
+			
+			this.kindOfGame = kindOfGame;
+			
+		}
+
+		public int getId() {
+			
+			return id;
+		}
+
+		public void setId(int id) {
+			
+			this.id = id;
+		}
+
+		public  String getName() {
+			
+			return name;
+		}
+
+		public void setName(String name) {
+			
+			this.name = name;
+		}
+
+		public String getKindOfGame() {
+			
+			return kindOfGame;
+		}
+
+		public void setKindOfGame(String kindOfGame) {
+			
+			this.kindOfGame = kindOfGame;
+		}
+    	  
+    	  
+	
+
+}
