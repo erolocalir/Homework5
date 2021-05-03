@@ -1,0 +1,95 @@
+package homework5;
+
+public class User implements Entity {
+	
+	int idOfGame;
+	String firstName;
+	String lastName;
+	int dateOfBirth;
+	String nationalityId;
+	
+	
+	public User() {
+		
+		
+		
+	}
+
+
+	public User(int idOfGame, String firstName, String lastName, int dateOfBirth, String nationalityId) {
+		
+		super();
+		
+		this.idOfGame = idOfGame;
+		
+		this.firstName = firstName;
+		
+		this.lastName = lastName;
+		
+		this.dateOfBirth = dateOfBirth;
+		
+		this.nationalityId = nationalityId;
+		
+	}
+
+
+	public int getIdOfGame() {
+		
+		return idOfGame;
+	}
+
+
+	public void setIdOfGame(int idOfGame) {
+		
+		this.idOfGame = idOfGame;
+	}
+
+
+	public String getFirstName() {
+		
+		return firstName;
+	}
+
+
+	public void setFirstName(String firstName) {
+		
+		this.firstName = firstName;
+	}
+
+
+	public String getLastName() {
+		
+		return lastName;
+	}
+
+
+	public void setLastName(String lastName) {
+		
+		this.lastName = lastName;
+	}
+
+
+	public int getDateOfBirth() {
+		
+		return dateOfBirth;
+	}
+
+
+	public void setDateOfBirth(int dateOfBirth) {
+		
+		this.dateOfBirth = dateOfBirth;
+	}
+
+
+	public String getNationalityId() {
+		
+		return nationalityId;
+	}
+
+
+	public void setNationalityId(String nationalityId) {
+		
+		this.nationalityId = nationalityId;
+	}
+
+}
