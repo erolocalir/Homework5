@@ -1,0 +1,54 @@
+package homework5;
+
+import java.rmi.RemoteException;
+import java.time.ZoneId;
+import homework5.User;
+import homework5.Result;
+import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
+
+public class MernisServiceAdapter implements UserCheckService{
+
+	
+public Result CheckIfRealPerson(User user) {
+		
+		KPSPublicSoapProxy kpsPublicSoapProxy = new KPSPublicSoapProxy();
+		
+		boolean result = true;
+		
+		try {
+			result = kpsPublicSoapProxy.TCKimlikNoDogrula(
+					
+					Long.parseLong(user.getNationalityId()),
+					
+					user.getFirstName().toUpperCase(),
+					
+					user.getLastName().toUpperCase(), 
+					
+					user.getDateOfBirth()
+					
+					);
+			
+		} catch (RemoteException e) {
+			
+		
+			e.printStackTrace();
+		}
+		
+		if(result) {
+			
+			return new homework5.Result(true);
+			
+		}else {
+			
+			return new homework5.Result(false,"Bir şeyler ters gitti");
+		}
+	
+		
+	
+	
+}
+}
+	
+	
+
+
