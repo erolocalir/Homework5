@@ -1,0 +1,67 @@
+package homework5;
+
+public class Campaign implements Entity{
+	
+	
+	
+	String campaignName;
+	int id;
+	int validityPeriodOfCampaign;
+	
+	
+	public Campaign () {
+		
+		
+	}
+
+
+	public Campaign(String campaignName, int id, int validityPeriodOfCampaign) {
+		
+		super();
+		
+		this.campaignName = campaignName;
+		
+		this.id = id;
+		
+		this.validityPeriodOfCampaign = validityPeriodOfCampaign;
+		
+	}
+
+
+	public String getCampaignName() {
+		
+		return campaignName;
+	}
+
+
+	public void setCampaignName(String campaignName) {
+		
+		this.campaignName = campaignName;
+	}
+
+
+	public int getId() {
+		
+		return id;
+	}
+
+
+	public void setId(int id) {
+		
+		this.id = id;
+	}
+
+
+	public int getValidityPeriodOfCampaign() {
+		
+		return validityPeriodOfCampaign;
+	}
+
+
+	public void setValidityPeriodOfCampaign(int validityPeriodOfCampaign) {
+		
+		this.validityPeriodOfCampaign = validityPeriodOfCampaign;
+	}
+	
+
+}
